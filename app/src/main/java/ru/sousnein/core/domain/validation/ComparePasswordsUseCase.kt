@@ -1,6 +1,6 @@
 package ru.sousnein.core.domain.validation
 
-import ru.sousnein.androidclient.R
+import ru.sousnein.R
 
 object ComparePasswordsUseCase {
 

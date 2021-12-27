@@ -1,8 +1,8 @@
 package ru.sousnein.features.login.navigation
 
 import ru.sousnein.features.login.di.LoginNavigator
-import ru.sousnein.androidclient.navigation.AppNavigator
-import ru.sousnein.androidclient.navigation.screens.Screens
+import ru.sousnein.navigation.AppNavigator
+import ru.sousnein.navigation.screens.Screens
 import javax.inject.Inject
 
 class LoginNavigationImpl @Inject constructor(

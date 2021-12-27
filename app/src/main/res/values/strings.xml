@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Gingers</string>
+    <string name="global_open_email">test_open_email@gmail.com</string>
+    <string name="global_different_passwords_error">test_different_password_error</string>
+    <string name="global_empty_input_error">test_empty_input_error</string>
+    <string name="global_email_format_error">test_email_format_error</string>
+    <string name="global_email_already_exist_error">test_email_already_exist_error</string>
+    <string name="global_short_passwords_error">test_short_passwords_error</string>
 </resources>
