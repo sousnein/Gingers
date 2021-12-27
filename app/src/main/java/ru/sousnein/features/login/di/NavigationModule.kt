@@ -4,7 +4,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import ru.bitreader.androidclient.navigation.AppNavigator
+import ru.sousnein.androidclient.navigation.AppNavigator
 import javax.inject.Singleton
 
 @Module

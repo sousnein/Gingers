@@ -1,6 +1,6 @@
 package ru.sousnein.core.domain.validation
 
-import ru.bitreader.androidclient.R
+import ru.sousnein.androidclient.R
 
 object ValidatePasswordUseCase {
 

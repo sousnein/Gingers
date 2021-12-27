@@ -14,7 +14,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.ExperimentalUnitApi
 import androidx.compose.ui.unit.dp
-import ru.bitreader.androidclient.R
+import ru.sousnein.androidclient.R
 import ru.sousnein.core.ui.ripple.SecondaryButtonRippleTheme
 import ru.sousnein.core.ui.theme.AndroidClientTheme
 import ru.sousnein.core.ui.theme.ColorsConf

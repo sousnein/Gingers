@@ -3,7 +3,7 @@ package ru.sousnein.features.login.common.domain
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import ru.sousnein.features.login.data.IAuthRepository
-import ru.bitreader.androidclient.type.UserModelInput
+import ru.sousnein.androidclient.type.UserModelInput
 import javax.inject.Inject
 
 class SignUpUseCase @Inject constructor(

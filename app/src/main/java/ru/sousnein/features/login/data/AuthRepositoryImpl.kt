@@ -4,10 +4,10 @@ import com.apollographql.apollo.ApolloClient
 import com.apollographql.apollo.api.Input
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import ru.bitreader.androidclient.mutations.SignUpMutation
-import ru.bitreader.androidclient.queries.SignInQuery
-import ru.bitreader.androidclient.type.AuthRequestInput
-import ru.bitreader.androidclient.type.UserModelInput
+import ru.sousnein.androidclient.mutations.SignUpMutation
+import ru.sousnein.androidclient.queries.SignInQuery
+import ru.sousnein.androidclient.type.AuthRequestInput
+import ru.sousnein.androidclient.type.UserModelInput
 import javax.inject.Inject
 
 class AuthRepositoryImpl @Inject constructor(

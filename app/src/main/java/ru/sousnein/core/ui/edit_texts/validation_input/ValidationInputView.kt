@@ -18,7 +18,7 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.ExperimentalUnitApi
 import androidx.compose.ui.unit.dp
-import ru.bitreader.androidclient.R
+import ru.sousnein.androidclient.R
 import ru.sousnein.core.ui.edit_texts.MaskType
 import ru.sousnein.core.ui.edit_texts.basic_input.BasicInputView
 import ru.sousnein.core.ui.errors.TextErrorView
