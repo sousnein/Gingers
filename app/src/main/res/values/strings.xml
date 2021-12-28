@@ -1,9 +1,57 @@
 <resources>
     <string name="app_name">Gingers</string>
-    <string name="global_open_email">test_open_email@gmail.com</string>
-    <string name="global_different_passwords_error">test_different_password_error</string>
-    <string name="global_empty_input_error">test_empty_input_error</string>
-    <string name="global_email_format_error">test_email_format_error</string>
-    <string name="global_email_already_exist_error">test_email_already_exist_error</string>
-    <string name="global_short_passwords_error">test_short_passwords_error</string>
+
+    //globalStrings
+    <string name="global_email">Email</string>
+    <string name="global_password">Пароль</string>
+    <string name="global_password_repeat">Подтвердите пароль</string>
+    <string name="global_forget_password">Забыли пароль ?</string>
+    <string name="global_sign_in">Войти</string>
+    <string name="global_btn_create_account">Создать аккаунт</string>
+    <string name="global_continue">Дальше</string>
+    <string name="global_back">Назад</string>
+    <string name="global_open_email">Открыть почту</string>
+    <string name="global_read">Читать</string>
+    <string name="global_manga_full_description">Полное описание манги</string>
+    <string name="global_chapters">Главы</string>
+    <string name="global_discussions">Обсуждение</string>
+    <string name="global_similar">Похожее</string>
+    <string name="global_hello">Привет</string>
+    <string name="global_settings">Настройки</string>
+
+    //globalErrors
+    <string name="global_empty_input_error">Поле пустое</string>
+    <string name="global_email_format_error">Неправильный формат почты</string>
+    <string name="global_email_already_exist_error">Пользователь с такой почтой уже существует</string>
+    <string name="global_different_passwords_error">Пароли не совпадают</string>
+    <string name="global_short_passwords_error">Пароль слишком короткий</string>
+
+    <string name="create_account_title">Создайте аккаунт</string>
+    <string name="create_account_message">Синхронизируйте главы на всех устройствах!</string>
+    <string name="create_account_alternative_account">Или создайте аккаунт через</string>
+
+    <string name="login_title">Войдите</string>
+    <string name="login_message">Синхронизируйте главы на всех устройствах!</string>
+    <string name="login_alternative_login">Или войдите через</string>
+
+    <string name="recover_title">Восстановление</string>
+    <string name="recover_message">Отправим письмо с инструкцией по восстановлению пароля</string>
+    <string name="recover_message_sent">Письмо отправлено</string>
+    <string name="recover_instruction_message">Мы отправили письмо с интсрукицей на почту</string>
+
+    <string name="main_bottom_tab_title">Главный</string>
+    <string name="library_bottom_tab_title">Библиотека</string>
+    <string name="profile_bottom_tab_title">Профиль</string>
+
+    <string name="library_menu_title">Библиотека</string>
+    <string name="library_tab_search_hint">Поиск по библиотеке</string>
+    <string name="library_tab_wishlist">Избранное</string>
+    <string name="library_tab_recent">Недавнее</string>
+    <string name="library_tab_read_list">Ридлисты</string>
+    <string name="library_empty_read_list_title">У вас пока нет ридлистов</string>
+    <string name="library_create_read_list">Создать ридлист</string>
+
+    <string name="profile_logout">Выйти из аккаунта</string>
+    <string name="profile_app_version">Версия приложения %s</string>
+
 </resources>

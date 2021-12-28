@@ -7,11 +7,11 @@ import javax.inject.Inject
 
 class SignInUseCase @Inject constructor(
     private val authRepository: IAuthRepository,
-    private val userRepository: IUserRepository,
+//    private val userRepository: IUserRepository,
 ) {
 
     suspend operator fun invoke(email: String, password: String) = withContext(Dispatchers.IO) {
-        val userId = UserIdInput(email = email).toInput()
+       /* val userId = UserIdInput(email = email).toInput()
         val authInput = AuthRequestInput(password = password, userId = userId).toInput()
 
         authRepository.signIn(authInput).let {
@@ -24,7 +24,7 @@ class SignInUseCase @Inject constructor(
             userPrefs.userName = user?.username.orEmpty()
             userPrefs.id = user?.id?.toString()?.toLong() ?: -1
             userRepository.updateUserData(userPrefs.build())
-        }
+        }*/
     }
 
 }

@@ -8,10 +8,13 @@ import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.ExperimentalUnitApi
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import dagger.hilt.android.EntryPointAccessors
+import ru.sousnein.features.login.presentation.login.LoginScreen
+import ru.sousnein.features.login.presentation.login.LoginViewModel
 import ru.sousnein.navigation.AppNavigator
 import ru.sousnein.navigation.NavigationObserver
 import ru.sousnein.navigation.di.LocalNavigatorProvider
@@ -43,7 +46,8 @@ fun Navigation(
         modifier = modifier
     ) {
         composable(Screens.Login.route) {
-            LoginGraph(localNavigator = localNavigatorProvider.loginNavigator())
+            val viewModel = hiltViewModel<LoginViewModel>()
+            LoginScreen(viewModel = viewModel)
         }
     }
 
