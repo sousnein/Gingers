@@ -17,6 +17,7 @@ import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import dagger.hilt.android.AndroidEntryPoint
 import ru.sousnein.core.ui.theme.AndroidClientTheme
 import ru.sousnein.core.ui.theme.ColorsConf
+import ru.sousnein.main.models.MainActivityState
 import ru.sousnein.navigation.AppNavigator
 import ru.sousnein.navigation.appNavigation.Navigation
 import javax.inject.Inject
@@ -45,14 +46,21 @@ class MainActivity : ComponentActivity() {
 
                 Scaffold {
                     Surface(color = ColorsConf.black500) {
-                        Navigation(
-                            navController = navController,
-                            startScreen = state.startScreen,
-                            modifier = Modifier.padding(bottom = it.calculateBottomPadding()),
-                            appNavigator = appNavigator
-                        )
+                        when (state) {
+                            MainActivityState.Loading -> TODO("Сверстать экран загрузки, вставить сюлда")
+                            is MainActivityState.Loaded ->
+                                Navigation(
+                                    navController = navController,
+                                    startScreen = state.screens,
+                                    modifier = Modifier.padding(bottom = it.calculateBottomPadding()),
+                                    appNavigator = appNavigator
+                                )
+                        }
+                        //TODO(сверстать экран вебвью, логику я уже написал, скину в дисе)
                     }
                 }
+
+
             }
         }
     }

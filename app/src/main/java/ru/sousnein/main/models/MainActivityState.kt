@@ -3,6 +3,11 @@ package ru.sousnein.main.models
 import ru.sousnein.core.architecture.ViewState
 import ru.sousnein.navigation.screens.Screens
 
-data class MainActivityState(
-    val startScreen: Screens = Screens.Login
-) : ViewState
+sealed class MainActivityState : ViewState {
+
+    data class Loaded(val screens: Screens) : MainActivityState()
+
+    object Loading : MainActivityState()
+
+}
+
