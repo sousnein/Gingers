@@ -28,7 +28,6 @@ class LoginViewModel @Inject constructor(
             is LoginEvent.ChangeEmail -> onChangeEmail(event.state)
             is LoginEvent.ChangePassword -> onChangePassword(event.state)
             is LoginEvent.ShowPassword -> onShowPassword(event.state)
-            LoginEvent.CreateAccount -> loginNavigation.navigateToCreateAccount()
             LoginEvent.Exit -> loginNavigation.exit()
             LoginEvent.BackClicked -> loginNavigation.exit()
         }

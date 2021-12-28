@@ -10,18 +10,6 @@ class LoginNavigationImpl @Inject constructor(
     private val appNavigator: AppNavigator
 ) : ILoginNavigation {
 
-    override fun navigateToCreateAccount() {
-        navigator.navigate(Screens.CreateAccount.route) {
-            this.launchSingleTop = true
-        }
-    }
-
-    override fun navigateToRestoreNavigator() {
-        navigator.navigate(Screens.Recover.route) {
-            launchSingleTop = true
-        }
-    }
-
     override fun navigateToLogin() {
         navigator.popUpTo(route = Screens.Login.route, isInclusive = false)
     }
