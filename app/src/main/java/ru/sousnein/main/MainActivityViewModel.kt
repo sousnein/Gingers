@@ -18,7 +18,7 @@ class MainActivityViewModel @Inject constructor() : MviViewModel<MainActivitySta
     init {
         viewModelScope.launch {
             delay(2000)
-            updateState(MainActivityState.Loaded(Screens.WebView))
+            updateState(MainActivityState.Loaded(Screens.Login))
         }
 
     }

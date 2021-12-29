@@ -17,6 +17,7 @@ import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import dagger.hilt.android.AndroidEntryPoint
 import ru.sousnein.core.ui.theme.AndroidClientTheme
 import ru.sousnein.core.ui.theme.ColorsConf
+import ru.sousnein.features.login.presentation.login.LoadingScreen
 import ru.sousnein.main.models.MainActivityState
 import ru.sousnein.navigation.AppNavigator
 import ru.sousnein.navigation.appNavigation.Navigation
@@ -47,7 +48,7 @@ class MainActivity : ComponentActivity() {
                 Scaffold {
                     Surface(color = ColorsConf.black500) {
                         when (state) {
-                            MainActivityState.Loading -> TODO("Сверстать экран загрузки, вставить сюлда")
+                            MainActivityState.Loading -> LoadingScreen()
                             is MainActivityState.Loaded ->
                                 Navigation(
                                     navController = navController,
